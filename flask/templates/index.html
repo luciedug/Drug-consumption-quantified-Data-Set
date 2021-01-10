@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block head%}
+
+{% endblock %}
+
+{% block body %}
+<div>
+    <h1>IRIS PREDICTOR</h1>
+
+    <form action="/predict" method="POST">
+        <div>
+            <p>nscore</p>
+            <input type="number" name = "nscore" id="nscore">
+        </div>
+        
+        <div>
+            <p>escore</p>
+            <input type="number" name = "escore" id="escore">
+        </div>
+
+        <div>
+            <p>oscore</p>
+            <input type="number" name = "oscore" id="oscore">
+        </div>
+        
+        <div>
+            <p>ascore</p>
+            <input type="number" name = "ascore" id="ascore">
+        </div>
+        
+        <div>
+            <p>cscore</p>
+            <input type="number" name = "cscore" id="cscore">
+        </div>
+        
+        <div>
+            <p>impulsive</p>
+            <input type="number" name = "oscoimpulsivere" id="impulsive">
+        </div>
+
+        <div>
+            <p>ss</p>
+            <input type="number" name = "ss" id="ss">
+        </div>
+
+        <input type="submit" value="Predict">
+    </form>
+    <h2>Predicted: {{pred}}</h2>
+</div>
+{% endblock %}
