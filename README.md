@@ -19,3 +19,5 @@ Le projet se décompose en plusieurs parties :
   1. Exploration du dataset : exploration des variables, recherche de corrélation
   2. Machine Learning : Test de différents modèles (SVC, Naive Bayes, K nearest neighbors, random forest) sur plusieurs variables pour prédire la consommation ou non d'une drogue.   
   3. API Flask : API qui permet de faire les prédictions
+
+Toutes les observations et conclusions se trouve dans le PowerpointExplicatif.
